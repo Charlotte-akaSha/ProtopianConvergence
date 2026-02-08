@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Scripts (temporary extraction scripts)
+extract_assets.py
+download_assets.py
+download_images.sh
+assets.json
+image_map.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might contain sensitive information
+.env
+.env.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Wayback Machine original files (we've created clean versions)
+index_wayback.html
+about_wayback.html
+contact_wayback.html
