@@ -77,11 +77,27 @@ git push -u origin main
 6. Click **Save**
 7. Your site will be available at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
 
-### Step 4: Custom Domain (Optional)
-If you want to use a custom domain:
-1. Add a `CNAME` file in the root directory with your domain name
-2. Configure DNS settings with your domain provider to point to GitHub Pages
-3. See [GitHub Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for details
+### Step 4: Custom Domain Setup
+This site is configured to use the custom domain `protopianconvergence.org`.
+
+**DNS Configuration Required:**
+1. Go to your domain registrar (where you purchased protopianconvergence.org)
+2. Add the following DNS records:
+   - **Type**: `A` or `ALIAS`
+   - **Name**: `@` (or root domain)
+   - **Value**: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - OR use a CNAME record:
+   - **Type**: `CNAME`
+   - **Name**: `@` (or `www`)
+   - **Value**: `charlotte-akasha.github.io`
+
+3. After enabling GitHub Pages (Step 3), GitHub will automatically detect the CNAME file
+4. GitHub will verify your domain (this may take a few minutes to 24 hours)
+5. Once verified, your site will be live at: **https://protopianconvergence.org**
+
+**Note**: The CNAME file is already included in this repository. You just need to configure DNS and enable GitHub Pages.
+
+For more details, see [GitHub Pages custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 
 ## Notes
 
